@@ -122,4 +122,13 @@ body {
     justify-content: center;
     align-items: center;
     padding:50px 0px;
+    gap: 25px;
+}
+.footer-heading{
+    font-size:larger;
+}
+.para{
+   font-weight: 600;
+   color: #dbeaf8;
+
 }
