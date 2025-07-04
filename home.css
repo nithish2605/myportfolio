@@ -10,9 +10,10 @@ body {
     font-feature-settings: normal;
     font-variation-settings: normal;
     position: relative;
-    overflow: hidden;
 }
-
+body p{
+        color: #555a63;
+}
 .header {
     background-color: #ffffff;
     display: flex;
@@ -103,7 +104,8 @@ body {
 .big-box {
     display: flex;
     justify-content: center;
-    
+    padding:10% 15%;
+    max-width: 70%;
 }
 .left-box{
    display: flex;
@@ -115,16 +117,19 @@ body {
 }
 
 .online-status {
-    /* background-color: #dbeff7;
-    padding: 8px;
+    padding: 8px 20px;
     margin: 5px;
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-}
-.online-status p{
+    background: linear-gradient(to right, #d4f7dc, #d6eaff);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: #166534;
-    background-image: linear-gradient(to right,#dcfaea,#dcf3f3,#dbedfa);
-    font-weight: 500;
+    font-weight: 600;
+    width: fit-content;
+}   
+.online-status p{
+
+    background-image: linear-gradient(to right,#dbf3f3,#dbf3f3,#dbf3f3);
+    font-weight: 600;
 }
 .title-color{
     background: linear-gradient(to right, #8e35ea, #5e4aea,#2d5feb);
@@ -136,10 +141,17 @@ body {
     line-height: 1.10;
 }
 .title h1{
-    font-size: 56px;
-    font-weight: 800;
+    font-size: 75px;
+    font-weight: 900;
+    padding: 3% 0 0 0;
 }
-
+.content-1{
+    padding: 3px 0 0 0;
+}
+.content-2{
+    padding: 10px 0 0 0;
+    line-height: 1.5;
+}
 .footer {
     height: 100%;
     text-align: center;
