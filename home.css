@@ -12,7 +12,6 @@ body {
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-feature-settings: normal;
     font-variation-settings: normal;
-    /* position: relative; */
 }
 body p{
         color: #555a63;
@@ -99,10 +98,7 @@ body p{
     filter: blur(24px);
 }
 
-.available-cls {
-    display: flex;
-    align-items: center;
-}
+
 
 .big-box {
     display: flex;
@@ -121,25 +117,19 @@ body p{
 .row1{
  position: relative;
 }
-.row1 img{
-    position: absolute;
-    top:25%;
-    left:2%;
+.row1{
+     display: inline-flex;
+     gap: 10px;
+     background: linear-gradient(to right, #d4f7dc, #d6eaff);
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     color: #166534;
+     width: fit-content;
+     border-radius: 50px;
+     font-weight: 600;
+     margin: 5px;
+     padding: 2px 15px;
 }
-.online-status {
-    padding: 8px 20px 8px 40px;
-    margin: 5px;
-    border-radius: 50px;
-    background: linear-gradient(to right, #d4f7dc, #d6eaff);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: #166534;
-    font-weight: 600;
-    width: fit-content;
-}   
-.online-status p{
-    background-image: linear-gradient(to right,#dbf3f3,#dbf3f3,#dbf3f3);
-    font-weight: 600;
-}
+
 .title-color{
     background: linear-gradient(to right, #8e35ea, #5e4aea,#2d5feb);
     -webkit-background-clip: text;
@@ -150,8 +140,8 @@ body p{
     line-height: 1.10;
 }
 .title h1{
-    font-size: 75px;
-    font-weight: 900;
+    font-size: 70px;
+    font-weight: 800;
     padding: 3% 0 0 0;
 }
 .content-1{
