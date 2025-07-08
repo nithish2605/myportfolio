@@ -20,19 +20,20 @@ body p{
     background-color: #ffffff;
     display: flex;
     justify-content: space-around;
-    gap: 20%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;  
+    z-index: 999;  
 }
 
 .logo {
     display: flex;
-    padding: 11px;
-    margin-left: 2px;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo-name {
-    margin-right: 20px;
-    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
