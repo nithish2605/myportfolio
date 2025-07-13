@@ -382,19 +382,18 @@ a{
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1.8rem;
     font-size: 1.3rem;
 }
 
 .footer-heading {
     font-size: larger;
-    line-height: 3.5rem;
+    line-height: 3.2rem;
 }
 
 .para {
     color: #dbeafe;
+    margin: 0 4rem;
 }
 
 .footer-links{
@@ -406,7 +405,7 @@ a{
 
 .start-btn{
     background-color:#f3f4f6;
-    padding: 0.6rem 2rem;
+    padding: 0.8rem 2rem;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -415,14 +414,13 @@ a{
     color: #9340ec;
     cursor: pointer;
     font-size: 1.125rem;
-    /* font-weight:500; */
     border: none;
     transition: all 0.3s;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .start-btn:hover{
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .nav-icons{
@@ -479,4 +477,18 @@ a{
     .toolkit-cards{
         flex-direction: column;
     }
+}
+
+@media (max-width:690px){
+    .footer-links{
+        flex-direction: column;
+    }
+    .footer-container{
+        padding:0rem 2rem;
+    }
+
+    .footer-heading {
+    font-size:medium;
+    line-height: 2.8rem;
+}
 }
