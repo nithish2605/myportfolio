@@ -16,7 +16,8 @@ body {
     font-feature-settings: normal;
     font-variation-settings: normal;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -128,19 +129,18 @@ a{
     filter: blur(24px);
 }
 
-.box {
-    height: 100vh;
-    width: auto;
-    padding: 0px 12rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+.mainbox-section{
+    padding: 8rem 0rem;
 }
 
-.left-box {
-    width: 100%;
+.mainbox-container{
+    padding:0rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
 
 .right-box {}
 
@@ -156,20 +156,22 @@ a{
     font-weight: 600;
     margin: 5px;
     padding: 5px 10px;
-}
+} 
 
-.row2 {}
+.row2 h1{
+      font-size: 4.5rem;
+      font-weight:800 ;
+}
 
 .title-color {
     background: linear-gradient(to right, #8e35ea, #5e4aea, #2d5feb);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: 4.5rem;
+    /* line-height: 0.5rem; */
 }
 
-.title-child {
-    line-height: 1.10;
-}
 
 .title h1 {
     font-size: 70px;
@@ -328,10 +330,11 @@ a{
     transition: all 0.3S ease-in-out;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.04);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .card .icons {
     color: var(--primary);
     border-radius: 20%;
@@ -364,47 +367,49 @@ a{
     gap: 0.8rem;
     flex-wrap: wrap;
 }
-.skills-container span{
+
+.skills-container span {
     padding: 0.5rem 1rem;
-    border-radius:1.8rem;
+    border-radius: 1.8rem;
 }
 
-.footer{
+.footer {
     background-image: linear-gradient(to right, #6e2cbb, #1e4fbc, #0a6e96);
     display: flex;
     padding: 4rem 0;
 }
- 
-.footer-container{
+
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0rem 2rem;
     text-align: center;
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-    font-size: 1.3rem;
 }
 
 .footer-heading {
-    font-size: larger;
     line-height: 3.2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .para {
     color: #dbeafe;
-    margin: 0 4rem;
+    max-width: 36rem;
+    font-size: 1.251rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
 
-.start-btn{
-    background-color:#f3f4f6;
+.start-btn {
+    background-color: #f3f4f6;
     padding: 0.8rem 2rem;
     border-radius: 0.5rem;
     display: flex;
@@ -419,31 +424,32 @@ a{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.start-btn:hover{
+.start-btn:hover {
     transform: scale(1.08);
 }
 
-.nav-icons{
+.nav-icons {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.nav-icons a{
-     background-color: rgba(255, 255, 255, 0.2);
-     color: #f3f6fb;
-     padding: 1.2rem;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border-radius:50%;
-     transition: all 0.3s ease;
+.nav-icons a {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f3f6fb;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-.nav-icons a:hover{
+.nav-icons a:hover {
     transform: scale(1.1);
-    background-color:#5e8ac9;
+    background-color: #5e8ac9;
 }
+
 @media (max-width:768px) {
     .overview-wrapper {
         padding: 0 2rem;
@@ -474,21 +480,22 @@ a{
         display: block;
     }
 
-    .toolkit-cards{
+    .toolkit-cards {
         flex-direction: column;
     }
 }
 
-@media (max-width:690px){
-    .footer-links{
+@media (max-width:690px) {
+    .footer-links {
         flex-direction: column;
     }
-    .footer-container{
-        padding:0rem 2rem;
+
+    .footer-container {
+        padding: 0rem 2rem;
     }
 
     .footer-heading {
-    font-size:medium;
-    line-height: 2.8rem;
-}
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+    }
 }
