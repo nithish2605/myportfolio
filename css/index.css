@@ -1,0 +1,242 @@
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: rgb(84, 79, 79);
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    color: #9333ea;
+    transform: scale(1.1);
+}
+
+.myskills-container {
+    padding: 2rem;
+    background-image: linear-gradient(to bottom right, #935ef7, #3588f2, #11abdb);
+    color: var(--primary);
+    border-radius: 1.5rem;
+}
+.right-box{
+    position:relative;
+    transform: rotate(4deg);
+    transition: all 0.3s;
+}
+
+.right-box:hover{
+    transform: rotate(0deg);
+}
+
+.myskills-container::before{
+    content:"";
+    width:6rem;
+    height:6rem;
+    background-color:#f9e78f;
+    position:absolute;
+    border-radius:50%;
+    bottom:100%;
+    right:86%;
+    z-index:-1;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+   0% {
+    top: 0;
+  }
+  
+  40% {
+    transform: translateY(-35%);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.myskills-container::after{
+    content:"";
+    width:4rem;
+    height:4rem;
+    background-color:#efc9de;
+    position:absolute;
+    border-radius:50%;
+    top:90%;
+    left:92%;
+    z-index:-1;
+}
+
+.myskills-container .row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.threerow-wrapper {
+    margin-top: 1.5rem;
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem 1rem;
+    border-radius: 0.6rem;
+}
+
+.rows-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.threerow-wrapper .rows:nth-of-type(2){
+    margin-top:1.5rem;
+}
+.threerow-wrapper .rows:nth-of-type(3)
+{
+     margin-top:1.5rem;
+}
+
+.rows-child-title{
+    font-weight: 600;
+}
+.rows-child-detail{
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.skill-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview {
+    padding: 4rem 0;
+    background-color: var(--primary);
+}
+
+.overview-wrapper {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.overview-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.num {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.toolkit {
+    padding: 5rem 0;
+}
+
+.toolkit-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+    text-align: center;
+}
+
+.head-content h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.head-content p {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+}
+
+.toolkit-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--primary);
+    border-radius: 2rem;
+    border-top: solid 0.3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.3S ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card .icons {
+    color: var(--primary);
+    border-radius: 20%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .icons.icon-1 {
+    background-image: linear-gradient(to right, #f86f1a, #f04b3d);
+}
+
+.card .icons.icon-2 {
+    background-image: linear-gradient(to right, #b153eb, #dc4baf);
+}
+
+.card .icons.icon-3 {
+    background-image: linear-gradient(to right, #20c466, #16ba99);
+}
+
+.card .icons svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.skills-container span {
+    padding: 0.5rem 1rem;
+    border-radius: 1.8rem;
+}
