@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nithishkumar Portfolio | About</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/about.css">
-</head>
 
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/about.css">
+
+</head>
 <body>
     <!-- full-container starts here -->
     <div class="full-container">
@@ -26,9 +27,9 @@
                 </div>
                 <div class="nav-bar">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html" class="nav-bar active">About</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about/about.html" class="nav-bar active">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <div class="hamburger">☰</div>
@@ -129,59 +130,61 @@
 
                     <!-- right-box starts here -->
                     <div class="right-box">
-                        <div class="about-card card-1">
-                            <div class="about-icon icon-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 text-green-600"
-                                    data-lov-id="src/pages/About.tsx:88:24" data-lov-name="Clock"
-                                    data-component-path="src/pages/About.tsx" data-component-line="88"
-                                    data-component-file="About.tsx" data-component-name="Clock"
-                                    data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-green-600%22%7D">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 6 12 12 16 14"></polyline>
-                                </svg>
+                        <div class="about-card-wrapper">
+                            <div class="about-card card-1">
+                                <div class="about-icon icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-clock h-6 w-6 text-green-600"
+                                        data-lov-id="src/pages/About.tsx:88:24" data-lov-name="Clock"
+                                        data-component-path="src/pages/About.tsx" data-component-line="88"
+                                        data-component-file="About.tsx" data-component-name="Clock"
+                                        data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-green-600%22%7D">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="experience-content">
+                                    <h3>Experience</h3>
+                                    <p>1 Month in Web Design</p>
+                                </div>
                             </div>
-                            <div class="experience-content">
-                                <h3>Experience</h3>
-                                <p>1 Month in Web Design</p>
+                            <div class="about-card card-2">
+                                <div class="about-icon icon-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-globe h-6 w-6 text-blue-600"
+                                        data-lov-id="src/pages/About.tsx:100:24" data-lov-name="Globe"
+                                        data-component-path="src/pages/About.tsx" data-component-line="100"
+                                        data-component-file="About.tsx" data-component-name="Globe"
+                                        data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-blue-600%22%7D">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                        <path d="M2 12h20"></path>
+                                    </svg>
+                                </div>
+                                <div class="location-content">
+                                    <h3>Location</h3>
+                                    <p>Arakkonam, chennai</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="about-card card-2">
-                            <div class="about-icon icon-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-globe h-6 w-6 text-blue-600"
-                                    data-lov-id="src/pages/About.tsx:100:24" data-lov-name="Globe"
-                                    data-component-path="src/pages/About.tsx" data-component-line="100"
-                                    data-component-file="About.tsx" data-component-name="Globe"
-                                    data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-blue-600%22%7D">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                    <path d="M2 12h20"></path>
-                                </svg>
-                            </div>
-                            <div class="location-content">
-                                <h3>Location</h3>
-                                <p>Arakkonam, chennai</p>
-                            </div>
-                        </div>
-                        <div class="about-card card-3">
-                            <div class="about-icon icon-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-user h-6 w-6 text-purple-600"
-                                    data-lov-id="src/pages/About.tsx:112:24" data-lov-name="User"
-                                    data-component-path="src/pages/About.tsx" data-component-line="112"
-                                    data-component-file="About.tsx" data-component-name="User"
-                                    data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-purple-600%22%7D">
-                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <div class="contact-content">
-                                <h3>contact</h3>
-                                <p>nithishvj2605@gmail.com</p>
+                            <div class="about-card card-3">
+                                <div class="about-icon icon-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-user h-6 w-6 text-purple-600"
+                                        data-lov-id="src/pages/About.tsx:112:24" data-lov-name="User"
+                                        data-component-path="src/pages/About.tsx" data-component-line="112"
+                                        data-component-file="About.tsx" data-component-name="User"
+                                        data-component-content="%7B%22className%22%3A%22h-6%20w-6%20text-purple-600%22%7D">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-content">
+                                    <h3>contact</h3>
+                                    <p>nithishvj2605@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,6 +193,83 @@
             </section>
         </div>
         <!-- wrapper of main boxes to place bg blur cirlces ends here -->
+
+        <!-- learning journey starts here section -->
+        <section class="learning-journey-section">
+            <div class="learning-journey-container">
+                <div class="learning-journey-heading">
+                    <h1>My Learning Journey</h1>
+                    <p>Every step forward is a victory in my web development adventure</p>
+                </div>
+                <div class="learning-card-container">
+                    <div class="learning-cards">
+                        <div class="learn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#29b485" />
+                                        <stop offset="100%" stop-color="#3493cf" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Z" fill="url(#grad1)" />
+                            </svg>
+                        </div>
+                        <div class="learn-card-content">
+                            <h2>Started Learning Web Design</h2>
+                            <h4 style="color: #9333ea;">1 Month Ago</h4>
+                            <p>
+                                Began my journey into web design, learning HTML, CSS, and JavaScript fundamentals.
+                                Discovered my
+                                passion for creating beautiful user interfaces.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learning-cards">
+                        <div class="learn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <defs>
+                                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#4e7af6" />
+                                        <stop offset="100%" stop-color="#905ff7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="12" cy="12" r="12" fill="url(#grad2)" />
+                            </svg>
+                        </div>
+                        <div class="learn-card-content">
+                            <h2>First Project Completed</h2>
+                            <h4 style="color: #2563eb;">3 Weeks Ago</h4>
+                            <p>
+                                Successfully completed my first web project - a simple but functional website that
+                                helped me understand the basics of web development workflow.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learning-cards">
+                        <div class="learn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <defs>
+                                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#b753e2" />
+                                        <stop offset="100%" stop-color="#d84db5" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Z" fill="url(#grad3)" />
+                            </svg>
+                        </div>
+                        <div class="learn-card-content">
+                            <h2>Started Learning Web Design</h2>
+                            <h4 style="color: #16a476;">Present</h4>
+                            <p>Currently expanding my skills with React, Tailwind CSS, and modern development tools.
+                                Building this portfolio to showcase my growth!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- learning journey starts here section -->
 
         <!-- footer starts here -->
         <section class="footer">
@@ -262,5 +342,11 @@
     </div>
     <!-- full-container ends here -->
 </body>
-
+<script>
+    var menubar = document.querySelector('.hamburger');
+    var navlinks = document.querySelector('.nav-bar ul');
+    menubar.addEventListener('click', () => {
+        navlinks.classList.toggle("show");
+    });
+</script>
 </html>

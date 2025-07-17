@@ -34,20 +34,24 @@
 .about-card.card-1 {
     border-left: solid 0.3rem #16a34a;
     margin-top: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .about-card.card-2 {
     border-left: solid 0.3rem #5161f8;
     margin-top: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .about-card.card-3 {
     border-left: solid 0.3rem #a855f7;
     margin-top: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .experience-content p {
     color: #1d793f;
@@ -59,4 +63,99 @@
 
 .contact-content p {
     color: #a14ded;
+}
+
+.right-box {
+    position: relative;
+}
+
+.about-card-wrapper::before {
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    background-color: #f9e78f;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 78%;
+    right: 86%;
+    z-index: -1;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.about-card-wrapper::after {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    background-color: #efc9de;
+    position: absolute;
+    border-radius: 50%;
+    top: 90%;
+    left: 92%;
+    z-index: -1;
+}
+
+.learning-journey-section {
+    padding: 6rem 0;
+    background-color: #edf3fb;
+}
+
+.learning-journey-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.learning-journey-heading {
+    text-align: center;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+}
+
+.learning-journey-heading h1 {
+    font-size: 2.5rem;
+}
+
+.learning-journey-heading p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+.learning-card-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.learning-cards {
+    background-color: #ffffff;
+    display: flex;
+    gap: 2rem;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.learning-cards:hover,
+.about-card.card-1:hover,
+.about-card.card-2:hover,
+.about-card.card-3:hover {
+    transform: scale(1.06);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.learning-cards h2 {
+    margin-bottom: 1rem;
+}
+
+.learning-cards h4 {
+    margin-bottom: 1rem;
+}
+
+.learning-cards p {
+    line-height: 1.8rem;
+}
+
+.learn-icon {
+    margin-top: 0.4rem;
 }
