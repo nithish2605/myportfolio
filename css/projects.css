@@ -115,11 +115,32 @@ img{
 .live-btn:hover{
      background-image: linear-gradient(to right,#7b2cea,#5f41e6,#2444d6);
 }
+.technologies-section{
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ padding: 4rem 0;
+}
+.technologies-container h1{
+    margin-bottom: 1rem;
+}
+
+.head-content {
+    margin-bottom: 4.5rem;
+    font-size: 1.3rem;
+}
+
+
+
 @media (max-width:1200px){
     .project-cards-wrapper{
         grid-template-columns: repeat(2,1fr);
         gap:2rem;
         padding: 0 1.3rem;
+    }
+     .toolkit-cards {
+        flex-direction: column;
+        padding:0 2rem;
     }
 }
 

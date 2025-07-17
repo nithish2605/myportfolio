@@ -342,7 +342,7 @@ a {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:769px) {
     .overview-wrapper {
         padding: 0 2rem;
         margin: 0;
@@ -375,6 +375,9 @@ a {
     .toolkit-cards {
         flex-direction: column;
     }
+     .footer-links{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:490px) {
@@ -385,9 +388,6 @@ a {
 }
 
 @media (max-width:541px) {
-    .footer-links{
-        flex-direction: column;
-    }
     .para{
         margin-left: 0;
         margin-right: 0;
