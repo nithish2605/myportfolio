@@ -39,6 +39,7 @@ img{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     overflow: hidden;
     transition: all 0.3s ease-out;
+    position: relative;
 }
 .project-cards:hover{
     transform: scale(1.05);
@@ -64,7 +65,39 @@ img{
     line-height: 1.8rem;
     margin-bottom: 1rem;
 }
-
+.project-card-img1::before{
+    content: "completed";
+    background-color:#16a34a;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    padding: 0.2rem 0.8rem;
+    border-radius:1rem;
+}
+.project-card-img2::before{
+    content: "In progress";
+    background-color:#2563eb;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    padding: 0.2rem 0.8rem;
+    border-radius:1rem;
+}
+.project-card-img3::before{
+    content: "Planning";
+    background-color:#e5e7eb;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    padding: 0.2rem 0.8rem;
+    border-radius:1rem;
+}
 .project-skills{
     display: flex;
     gap: 1.5rem;
@@ -141,6 +174,9 @@ img{
      .toolkit-cards {
         flex-direction: column;
         padding:0 2rem;
+    }
+    .card{
+        gap: 1rem;
     }
 }
 
