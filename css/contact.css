@@ -6,11 +6,16 @@
 .contact-container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
+    gap: 3rem;
 }
+.contact-container > * {
+  width: 100%;
+  min-width: 0; /* prevent overflow from inside */
+}
+
 .form-container,.info-container{
     padding: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -45,7 +50,7 @@
 input,textarea{
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
-    border: 1px solid #e9d5ff;
+    border: 0.1rem solid blueviolet;
 }
 
 .form-row3{
@@ -87,19 +92,139 @@ input,textarea{
      padding:0.8rem 1rem;
      border-radius: 0.5rem;
 }
-.info-row2{
+.info-row1{
+    margin-bottom: 2rem;
+}
+.info-row2,.info-row3,.info-row4{
     display: flex;
+    align-items: flex-start ;
     gap: 1.5rem;
     margin-top: 2.5rem;
+    padding: 1rem;
+    line-height: 1.6rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.info-row2{
+    margin-top: 0;
+}
+.info-row2:hover{
+    transform: scale(1.04);
+    background-color: #e7dff0;
+}
+.info-row3:hover{
+    transform: scale(1.04);
+    background-color: #eff6ff;
+}
+.info-row4:hover{
+    transform: scale(1.04);
+    background-color: #f0fdf4;
 }
 
 .mail-icon{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: row;
+    padding: 0.6rem 0.8rem;
     color: #9333ea;
     font-weight: 700;
     border-radius: 0.5rem;
     background: linear-gradient(to right, #efe8ff, #e0eafe);
 } 
+
+.phone-icon{
+    padding: 0.6rem 0.8rem;
+    background-image: linear-gradient(#d9edfe,#d1f7fe);
+    border-radius: 0.5rem;
+    color: #3470ec;
+}
+
+.location-icon{
+    padding: 0.6rem 0.8rem;
+    background-image: linear-gradient(#d9fce9,#cefbf0);
+    border-radius: 0.5rem;
+    color:rgb(6, 128, 6);
+}
+.lets-connect-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #9333ea, #2563eb);
+    border-radius: 0.5rem;
+    padding: 2rem; 
+    color: #ffffff;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+.lets-connect-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.heart-icon{
+    font-weight: 700;
+}
+.connect-links{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.github,.linked-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #ffffff;
+    background-color: #a179f0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.github a,.linked-in a{
+    color: #ffffff;
+}
+.github:hover,.linked-in:hover{
+    transform: scale(1.04);
+     background-color: #9575d6;
+}
+.lets-discuss-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    color: #551a8b;
+    transition: all 0.3s ease-in-out;
+}
+.lets-discuss-btn:hover{
+    transform: scale(1.04);
+}
+
+@media (max-width:1200px){
+    .contact-container{
+        grid-template-columns:1fr !important;
+        gap:2rem;
+        padding: 0 1rem;
+    }
+}
+
+  @media (max-width:769px) {
+    .form-row2{
+        flex-direction: column;
+    }
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+   
+}

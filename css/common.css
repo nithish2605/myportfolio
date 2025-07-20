@@ -24,6 +24,9 @@ a {
 .full-container{
     overflow-x: hidden;
 }
+p{
+    color: #625563;
+}
 
 .header-section {
     background-color: #fdfdff;
