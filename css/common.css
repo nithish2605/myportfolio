@@ -135,7 +135,7 @@ p{
     filter: blur(24px);
 }
 .mainbox-section {
-    padding: 8rem 0rem;
+    padding: 8rem 1rem;
 }
 
 .mainbox-container {
@@ -388,9 +388,6 @@ p{
         flex-direction: column;
         align-items: start;
     }
-    .mainbox-section {
-    padding: 2rem 0rem;
-}
 }
 
 @media (max-width:541px) {
