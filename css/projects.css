@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding:4rem 0;
+    padding:4rem 1rem;
 }
 
 .row-3.projects{
@@ -125,7 +125,7 @@ img{
     gap:1.5rem;
     padding: 0.5rem 2.3rem;
     border: 1px solid #c084fc;
-   background-color: #ffffff;
+    background-color: #ffffff;
     border-radius: 0.5rem;
     color: black;
 }
@@ -139,7 +139,7 @@ img{
     justify-content: center;
     align-items: center;
     gap:1.5rem;
-    padding: 0.5rem 2.3rem;
+    padding: 0.5rem 2.8rem;
     background-image: linear-gradient(to right,#833aea,#6447ea,#3a5aeb);
     border-radius: 0.5rem;
     color: #ffffff;
@@ -182,8 +182,14 @@ img{
 
   @media (max-width:769px) {
         .project-cards-wrapper{
-        grid-template-columns: 1fr;
-        padding: 0 2rem;
+         grid-template-columns: 1fr;
+         padding: 0 2rem;
          gap:4rem;
-    }
+    } 
+}
+
+@media (max-width:480px) {
+    .project-btn{
+        flex-direction: column;
+    } 
 }

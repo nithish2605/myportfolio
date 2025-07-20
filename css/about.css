@@ -159,3 +159,10 @@
 .learn-icon {
     margin-top: 0.4rem;
 }
+
+@media (max-width:768px) {
+    .learning-journey-heading p{
+        line-height: 1.8rem;
+        margin-top: 1.5rem;
+    }
+}

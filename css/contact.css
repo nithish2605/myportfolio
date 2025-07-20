@@ -142,6 +142,7 @@ input,textarea{
     border-radius: 0.5rem;
     color:rgb(6, 128, 6);
 }
+
 .lets-connect-container{
     max-width: 1200px;
     margin: 0 auto;
@@ -166,6 +167,10 @@ input,textarea{
 
 .heart-icon{
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 .connect-links{
     display: flex;
@@ -227,4 +232,9 @@ input,textarea{
         padding: 1rem;
     }
    
+}
+@media (max-width:480px) {
+    .connect-links{
+        flex-direction: column;
+    } 
 }
