@@ -192,4 +192,7 @@ img{
     .project-btn{
         flex-direction: column;
     } 
+    .mainbox{
+    padding:1rem 0.5rem;
+}
 }
