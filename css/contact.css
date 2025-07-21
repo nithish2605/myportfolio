@@ -210,6 +210,9 @@ input,textarea{
     color: #aa62ed;
     transition: all 0.3s ease-in-out;
 }
+.lets-discuss-btn svg{
+    color: #aa62ed;
+}
 .lets-discuss-btn:hover{
     transform: scale(1.04);
 }

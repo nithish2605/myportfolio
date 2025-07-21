@@ -113,14 +113,14 @@ img{
 .project-btn{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
 }
 
 .code-btn{
     display: inline-flex;
-     align-items: center;
+    align-items: center;
     justify-content: center;
     gap:1.5rem;
     padding: 0.5rem 2.3rem;
@@ -128,6 +128,7 @@ img{
     background-color: #ffffff;
     border-radius: 0.5rem;
     color: black;
+    cursor: pointer;
 }
 
 .code-btn:hover{
@@ -143,6 +144,7 @@ img{
     background-image: linear-gradient(to right,#833aea,#6447ea,#3a5aeb);
     border-radius: 0.5rem;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .live-btn:hover{
