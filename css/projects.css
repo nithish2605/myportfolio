@@ -77,8 +77,8 @@ img{
     border-radius:1rem;
 }
 .project-card-img2::before{
-    content: "In progress";
-    background-color:#2563eb;
+    content: "completed";
+    background-color:#16a34a;
     color: #ffffff;
     position: absolute;
     top: 1rem;
@@ -88,9 +88,9 @@ img{
     border-radius:1rem;
 }
 .project-card-img3::before{
-    content: "Planning";
-    background-color:#e5e7eb;
-    color: black;
+    content: "completed";
+    background-color:#16a34a;
+    color: #ffffff;
     position: absolute;
     top: 1rem;
     right: 1rem;
